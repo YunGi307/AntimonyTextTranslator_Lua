@@ -1,0 +1,33 @@
+--名称
+appname="锑星文字试验场"
+--版本号
+appver="1.0.2"
+--版本
+appcode="1"
+--SDK
+appsdk="15"
+--关联
+path_pattern=""
+--软件包名
+packagename="com.androluax.antimony.testfield"
+--主题
+theme="Theme"
+--key
+app_key=""
+--渠道
+app_channel=""
+--作者
+developer="L"
+--描述
+description=""
+--调试模式
+debugmode=false
+--横屏模式
+landscape=true
+--显示状态栏
+显示状态栏=true
+--应用权限
+user_permission={
+ "INTERNET",
+ "WRITE_EXTERNAL_STORAGE"
+}
