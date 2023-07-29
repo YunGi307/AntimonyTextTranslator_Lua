@@ -3,7 +3,7 @@
 
 <br/>
 
-程序示例: 见 `example.jpg`
+程序示例: 见 `example.jpg`  
 已经打包完成的 apk 文件: `锑星文字试验场.apk`
 
 <br/>
