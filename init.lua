@@ -1,7 +1,7 @@
 --名称
 appname="锑星文字试验场"
 --版本号
-appver="1.0.2"
+appver="1.0.3"
 --版本
 appcode="1"
 --SDK

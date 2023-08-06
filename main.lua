@@ -42,8 +42,7 @@ function translate(text)
  while not isFinish do
   char = string.sub(text, i, i)
   byte = string.byte(char)
-  if byte > 128 then
-   -- 非 ASCII 字符
+  if byte > 128 then -- 非 ASCII 字符
    table.insert(iter, string.sub(text, i, i + 2))
    i = i + 3
    else
@@ -55,13 +54,6 @@ function translate(text)
    isFinish = true -- 完成
   end
  end
-
-
- local tmp = ""
- for i=1, #iter do
-  tmp = tmp .. iter[i] .. "\n"
- end
- writeFile("/storage/emulated/0/AntimonyTextFiles/tmp.txt", tmp)
 
  for i=1, #iter do
   -- tostring 是为了防止出现 nil 的情况
@@ -114,13 +106,12 @@ end
 
 function expertFile()
  local res = convertText()
- writeFile(FloderPath .. "/Expert.html", res)
- showMsg("已经导出至 \"" .. FloderPath .. "\" 啦")
+ writeFile(floderPath .. "/Expert.html", res)
+ showMsg("已经导出至 \"" .. floderPath .. "\" 啦")
 end
 
 
-
-local floderPath = '/storage/emulated/0/AntimonyTextFiles'
+floderPath = '/storage/emulated/0/AntimonyTextFiles'
 if not exists(floderPath) then
  mkdir(floderPath)
 end
